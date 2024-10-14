@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav id="menuList">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+    <img src="menu.png" onclick="togglemenu()" class="menu">
+
+    <main>
+        <h1>The Science Blog</h1>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <figure><img src="images/image1.jpg" alt="The Solar System" class="solarsystem"><br><br>
+                <figcaption>Fig.1 The Solar System</figcaption></figure>
+                <a href="posts/post1.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image2.jpg" alt="The Sun" class="sun"><br><br>
+                <figcaption class="sun-post">Fig.2 The Sun</figcaption></figure>
+                <a href="posts/post2.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image3.jpg" alt="Earth"><br><br>
+                <figcaption>Fig.3 Earth</figcaption></figure>
+                <a href="posts/post3.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image4.jpg" alt="The Moon"><br><br>
+                <figcaption>Fig.4 The Moon</figcaption></figure>
+                <a href="posts/post4.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image5.jpg" alt="The Milky Way"><br><br>
+                <figcaption>Fig.5 The Milky Way</figcaption></figure>
+                <a href="posts/post5.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image6.jpg" alt="Andromeda"><br><br>
+                <figcaption>Fig.6 Andromeda</figcaption></figure>
+                <a href="posts/post6.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image7.jpg" alt="The Whirlpool Galaxy"><br><br>
+                <figcaption>Fig.7 The Whirlpool Galaxy</figcaption></figure>
+                <a href="posts/post7.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image8.jpg" alt="Saturn"><br><br>
+                <figcaption>Fig.8 Saturn</figcaption></figure>
+                <a href="posts/post8.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image9.jpg" alt="Black Holes"><br><br>
+                <figcaption>Fig.9 Black Holes</figcaption></figure>
+                <a href="posts/post9.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image10.jpg" alt="Sagittarius A*"><br><br>
+                <figcaption>Fig.10 Sagittarius A*</figcaption></figure>
+                <a href="posts/post10.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image11.jpg" alt="Theta Apodis"><br><br>
+                <figcaption>Fig.11 Theta Apodis</figcaption></figure>
+                <a href="posts/post11.html"><button>Learn More</button></a>
+            </article>
+
+            <article class="blog-card">
+                <figure><img src="images/image12.jpg" alt="James Webb Space Telescope"><br><br>
+                <figcaption>Fig.12 James Webb Space Telescope</figcaption></figure>
+                <a href="posts/post12.html"><button>Learn More</button></a>
+            </article>
+           
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Science Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var menulist=document.getElementsById("menuList");
+
+        menuList.style.maxWidth="0px";
+
+        function togglemenu()
+        {
+            if(menuList.style.maxWidth=="0px")
+            {
+                menuList.style.maxWidth="380px";
+                menuList.style.opacity="100%";
+            }
+            else
+            {
+                menuList.style.maxWidth="0px";
+                menuList.style.opacity="0%";
+            }
+        }
+    </script>
+</body>
+</html>
